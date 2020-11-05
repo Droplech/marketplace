@@ -1,0 +1,460 @@
+* {
+    box-sizing: border-box;
+}
+
+.order_page .order-wrapper .order-title {
+    position: relative;
+    z-index: 1;
+}
+
+.order_page .order-wrapper .order-title h3 {
+    font-weight: 800;
+    font-size: 48px;
+    color: #262626;
+}
+
+.order_page .order-wrapper .order-title img {
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    left: -5px;
+}
+
+.data-container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.data-container .form-wrapper {
+    flex: 0 0 750px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 90px 40px 15px;
+}
+
+.data-container .form-wrapper .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+}
+
+.data-container .form-wrapper .form .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.data-container .form-wrapper .form .row.address {
+    margin-top: 60px;
+}
+
+.data-container .form-wrapper .form .part.client {
+    margin-top: 65px;
+}
+
+.data-container .form-wrapper .form .part.wishes {
+    margin-top: 75px;
+}
+
+.data-container .form-wrapper .form .part {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data-container .form-wrapper .form .fieldset {
+    padding: 0 15px;
+}
+
+.data-container .form-wrapper .form .fieldset .fieldset-label {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #262626;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.data-container .form-wrapper .form .fieldset {
+    flex: 0 0 50%;
+}
+
+.data-container .form-wrapper .form .fieldset .fieldset-input {
+    width: 100%;
+    padding: 15px 7px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #848484;
+    font-family: 'Rubik', sans-serif;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #848484;
+    border-width: 1px;
+}
+
+.data-container .form-wrapper .form .fieldset input[name="phone"] {
+    margin-top: 20px;
+}
+
+.data-container .form-wrapper .form .radio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.data-container .form-wrapper .form .radio-wrapper .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.data-container .form-wrapper .form .radio-wrapper > .input-container:nth-child(1) {
+    margin-left: 10px;
+}
+
+.data-container .form-wrapper .form .radio-wrapper > .input-container:nth-child(2) {
+    margin-left: 60px;
+}
+
+.data-container .form-wrapper .form .radio-wrapper .input-container .checkmark {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #FDDB2B;
+    cursor: pointer;
+    margin-right: 7px;
+    position: relative;
+}
+
+.data-container .form-wrapper .form .radio-wrapper .input-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    background-color: #FDDB2B;
+}
+
+.data-container .form-wrapper .form .radio-wrapper .input-container {
+    color: #848484;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.data-container .form-wrapper .form .radio-wrapper .input-container.active {
+    color: #262626;
+}
+
+.data-container .form-wrapper .form .radio-wrapper input:checked ~ .checkmark:after {
+    background-color: #FDDB2B;
+    display: block;
+}
+
+.data-container .form-wrapper .form .fieldset.fieldset_additionally {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.data-container .form-wrapper .form .fieldset.fieldset_additionally .fieldset-input {
+    flex: 0 0 110px;
+    margin-top: 18px;
+}
+
+.data-container .form-wrapper .form .fieldset .date-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.data-container .form-wrapper .form .fieldset .date-wrapper .fieldset-input {
+    flex: 0 0 110px;
+}
+
+.wishes textarea {
+    height: 150px;
+    resize: none;
+}
+
+.wishes .fieldset_variant {
+    position: relative;
+}
+
+.data-container .form-wrapper .form button {
+    width: 185px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #FDDB2B;
+    margin-bottom: 7px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.data-container .content {
+    padding: 30px 0 0 15px;
+    flex: 0 0 360px;
+}
+
+.data-container .content .wrapper {
+    position: relative;
+}
+
+.data-container .content .wrapper + .wrapper {
+    margin-top: 70px;
+}
+
+.data-container .content .wrapper > h3 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.data-container .content .order-details {
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+.data-container .content .order-details-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-container .content .order-details-item + .order-details-item {
+    margin-top: 15px;
+}
+
+.data-container .content .order-details-item .item-title {
+    display: flex;
+    align-items: center;
+    flex: 0 0 155px;
+}
+
+.data-container .content .order-details-item .item-title p {
+    margin: 0 25px 0 15px;
+    color: #848484;
+    font-size: 15px;
+    font-weight: 400;
+    width: 70px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.data-container .content .order-details-item .item-title .item-count {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #FDDB2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    color: #263238;
+    margin-left: auto;
+}
+
+.data-container .content .order-details-item .item-total-price {
+    font-weight: bold;
+    flex: 0 0 70px;
+    font-family: 'Rubik', sans-serif;
+    color: #263238;
+}
+
+.data-container .content .order-total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.data-container .content .order-total-price button {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    background-color: #F00000;
+    width: 145px;
+    height: 50px;
+    color: #fff;
+}
+
+.data-container .content .order-total-price p {
+    color: #263238;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.data-container .content .order-total-price p .value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #F00000;
+}
+
+.data-container .content .product-details {
+    padding: 15px 20px 80px;
+    margin-top: 25px;
+}
+
+.data-container .content .product-details-item {
+    display: flex;
+    align-items: center;
+}
+
+.data-container .content .product-details-item .product-description {
+    margin-left: 25px;
+    color: #263238;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.data-container .content .product-details-item + .product-details-item {
+    margin-top: 20px;
+}
+
+.data-container .content .wrapper .link-to-change {
+    position: absolute;
+    color: #FDDB2B;
+    right: 0;
+    bottom: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.data-container .content .wrapper .attention-text {
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 230px;
+}
+
+/*the container must be positioned relative:*/
+.city-select {
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+
+.city-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: transparent;
+}
+
+    /* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #FDDB2B transparent transparent transparent;
+}
+
+    /* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #FDDB2B transparent;
+    top: 15px;
+}
+
+    /* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #848484;
+    padding: 15px 7px;
+    border: 1px solid #848484;
+    border-color: transparent transparent #848484 transparent;
+    cursor: pointer;
+}
+
+    /* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+    /* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    color: #fff;
+    background-color: #FDDB2B
+}
+
+@media screen and (max-width: 1200px) {
+    .data-container .form-wrapper {
+        flex: 0 0 620px;
+    }
+
+    .data-container .form-wrapper {
+        padding: 35px 15px 40px 15px;
+    }
+
+    .data-container .content {
+        padding: 30px 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .data-container .form-wrapper,
+    .data-container .content {
+        flex: 0 0 100%;
+    }
+
+    .data-container .content {
+        padding: 0 20px;
+    }
+
+    .data-container .content .product-details  {
+        padding: 15px 0 50px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .data-container {
+        padding: 0;
+    }
+
+    .data-container .form-wrapper .form .fieldset {
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .data-container .form-wrapper .form .fieldset + .fieldset {
+        margin-top: 15px;
+    }
+
+    .data-container .form-wrapper .form button {
+        position: inherit;
+        margin-top: 20px;
+    }
+}
